@@ -1,4 +1,4 @@
-const ClientError = require('../expction/clientError');
+const ClientError = require('../../expction/ClientError');
 
 class AlbumsHandler {
   constructor(service, validator) {

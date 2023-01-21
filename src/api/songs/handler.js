@@ -1,5 +1,5 @@
 // File bertugas memproses data dari cliet, lalu mengirimkan data ke file service
-const ClientError = require('../expction/clientError');
+const ClientError = require('../../expction/invariantError');
 
 class SongsHandler {
   constructor(service, validator) {

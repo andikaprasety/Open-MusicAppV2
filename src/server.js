@@ -3,36 +3,36 @@ const Jwt = require('@hapi/jwt');
 
 // songs
 const songs = require('./api/songs');
-const SongsService = require('./services/dbPostgres/songsService');
-const validatorSongs = require('./src/validator/songsValidate');
+const SongsService = require('./services/Postgres/songsService');
+const validatorSongs = require('./validator/songs');
 
 // albums
 const albums = require('./api/albums')
-const AlbumsService = require ('./services/dbPostgres/albumService')
+const AlbumsService = require ('./services/Postgres/albumService')
 const albumsValidator = require ('./validator/albums')
 
 // users
-const users = require('./src/api/Users');
-const UsersService = require('./services/dbPostgres/usersService');
+const users = require('./api/Users');
+const UsersService = require('./services/Postgres/usersService');
 const userValidator = require('./validator/Users');
 
 // playlist
 const playlist = require('./api/Playlist');
-const PlaylistsService = require('./services/dbPostgres/playlistsService');
+const PlaylistsService = require('./services/Postgres/playlistsService');
 const playlistValidator = require('./validator/Playlist')
 
 //authentications
 const authentications = require('./api/authentications');
-const AuthenticationsService = require('./services/dbPostgres/authenticationsService');
+const AuthenticationsService = require('./services/Postgres/authenticationsService');
 const TokenManager = require('./Tokenize/tokenManeger');
 const AuthenticationsValidator = require('./validator/Authentications');
 
 //Collaborations
-const CollaborationsService = require('./services/dbPostgres/collaborationsService');
+const CollaborationsService = require('./services/Postgres/collaborationsService');
 
 // PlaylistSongs
 const playlistSongs = require('./api/PlaylistSongs');
-const PlaylistsSongsService = require('./services/dbPostgres/playlistsSongsService');
+const PlaylistsSongsService = require('./services/Postgres/playlistsSongsService');
 const PlaylistSongsValidator = require('./validator/PlaylistsSongsValidator');
 
 require('dotenv').config();

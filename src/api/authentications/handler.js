@@ -1,4 +1,4 @@
-const ClientError = require('../../src/expction/clientError');
+const ClientError = require('../../expction/ClientError');
  
 class AuthenticationsHandler {
   constructor(authenticationsService, usersService, tokenManager, validator) {
